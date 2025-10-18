@@ -21,4 +21,4 @@ class Solution:
 
 s = Solution()
 
-print(s.generate(0))
+print(s.generate(10))

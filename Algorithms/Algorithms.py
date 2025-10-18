@@ -53,9 +53,30 @@
 # print(factorial(number))
 
 
-"""  Fibonacci   """
-
-
+"""  binary search   """
+#
+# import random
+#
+# target = random.randint(0, 100)
+#
+#
+#
+# counter = 0
+#
+# while True:
+#     guess = int(input("Guess a number: "))
+#
+#     if guess == target:
+#         print(f'You won. Your attempt was {counter}.')
+#         break
+#     elif guess < target:
+#         counter += 1
+#         print(f'Your guess is lower than target.')
+#     else:
+#         counter += 1
+#         print(f'Your guess is higher than target.')
+#
+#
 
 
 
