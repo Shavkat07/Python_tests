@@ -16,7 +16,7 @@ Output: 1994
 Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 """
 
-class Solution(object):
+class Solution():
 	roman_numerals = {
 		'I': 1,
 		'V': 5,
