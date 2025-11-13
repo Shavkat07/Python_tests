@@ -164,7 +164,7 @@ class InvoiceManager:
         return path
 
 
-def generator_factory(format_name: str, client_name: str, items: List[Dict[str, float]]) -> InvoiceGenerator:
+def generator_factory(format_name, client_name, items) -> InvoiceGenerator:
     fmt = format_name.lower()
     if fmt == "pdf":
         return PDFInvoiceGenerator(client_name, items)
