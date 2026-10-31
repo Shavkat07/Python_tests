@@ -24,15 +24,15 @@
 
 """ Factorial of number with Recursion"""
 
-number = 998
-
-def factorial(n):
-	if n == 0:
-		return 1
-
-	return factorial(n - 1) * n
-
-print(factorial(number))
+# number = 998
+#
+# def factorial(n):
+# 	if n == 0:
+# 		return 1
+#
+# 	return factorial(n - 1) * n
+#
+# print(factorial(number))
 
 """ Factorial of number with Loop """
 
@@ -79,6 +79,22 @@ print(factorial(number))
 #
 
 
+nums = [0, 1, 0, 3, 12]
+# nums = [1,0,1]
+left, right = 0, 1
 
+while right < len(nums):
+	if nums[left] == 0 and nums[right] == 0:
+		right += 1
+	if nums[left] == 0:
+		f = nums[left]
+		nums[left] = nums[right]
+		nums[right] = f
+		left += 1
+		right += 1
+		continue
+	left += 1
+	right += 1
 
-
+	
+print(nums)
