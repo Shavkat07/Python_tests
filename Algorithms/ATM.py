@@ -28,17 +28,18 @@ class CustomATM(ATM):
 		valutas.reverse()
 		i = 0
 		while i < len(valutas):
-			if amount > valutas[i] and self.kassa[valutas[i]] > 0:
+			if amount >= valutas[i] and self.kassa[valutas[i]] > 0:
 				amount -= valutas[i]
 				self.kassa[valutas[i]] -= 1
 				print(valutas[i], end=", ")
 				continue
-			i+=1
+			i += 1
 		if amount > 0:
 			print(f"Qoldiq {amount}")
-				
+
+
 atm = CustomATM()
-dpst = [5000, 10000, 5000, 5000, 50000, 100000, 100000, 10000]
+dpst = [5000, 10000, 5000, 5000, 50000, 100000, 100000, 1000, 10000, 25000, 20000, 2000, ]
 atm.deposit(dpst)
 atm.withdraw(178000)
 # print(atm.kassa)
